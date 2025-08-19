@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
+import { Link } from "react-router-dom";
 import logoHorizontal from "../assets/Logotipo Pélvis Academy Horizontal.svg";
 import luniaMascote from "../assets/Lunia Padrão.svg";
 import videoTelaApp from "../assets/videoTelaApp.mp4";
@@ -29,12 +30,12 @@ const LandingPage = () => {
           <a href="#funcionalidades">Funcionalidades</a>
           <a href="#download">Download</a>
           <a href="#contato">Contato</a>
-          <a
-            href="/excluir-conta"
+          <Link
+            to="/excluir-conta"
             style={{ color: "#9260CE", fontWeight: "bold" }}
           >
             Informações
-          </a>
+          </Link>
         </nav>
       </header>
 
