@@ -21,11 +21,13 @@ const DashboardExcluirConta = () => (
     <img
       src={logo}
       alt="Logo Pélvis Academy"
+      aria-label="Logo Pélvis Academy"
       style={{ width: 180, marginBottom: 16 }}
     />
     <img
       src={luniaGif}
       alt="Mascote Lunia animada"
+      aria-label="Lunia animada"
       style={{
         width: 80,
         marginBottom: 8,
@@ -50,12 +52,18 @@ const DashboardExcluirConta = () => (
       <a
         href="mailto:suporte@agentcicle.com"
         style={{ color: themeColors.roxo, fontWeight: 600 }}
+        aria-label="Enviar e-mail para suporte"
       >
         suporte@agentcicle.com
       </a>
     </p>
     <p
-      style={{ color: themeColors.roxoEscuro, fontSize: 15, marginBottom: 18 }}
+      style={{
+        color: themeColors.roxoEscuro,
+        fontSize: 15,
+        marginBottom: 18,
+        lineHeight: 1.4,
+      }}
     >
       Ou entre no app e acesse: <strong>Perfil → Excluir conta</strong>.
     </p>
@@ -70,7 +78,8 @@ const DashboardExcluirConta = () => (
     >
       <img
         src={luniaIcon}
-        alt="Ícone Lunia"
+        alt="Ícone da Lunia"
+        aria-label="Ícone da Lunia"
         style={{ width: 32, height: 32 }}
       />
       <h3
@@ -91,6 +100,7 @@ const DashboardExcluirConta = () => (
         maxWidth: 340,
         color: themeColors.roxoEscuro,
         fontSize: 15,
+        lineHeight: 1.5,
       }}
     >
       <li>Sua conta (e-mail e nome)</li>
@@ -107,11 +117,21 @@ const DashboardExcluirConta = () => (
     >
       Esta ação é irreversível.
     </p>
+    <p
+      style={{
+        color: themeColors.roxoEscuro,
+        fontSize: 13,
+        marginTop: 6,
+        fontStyle: "italic",
+      }}
+    >
+      Os dados serão excluídos em até 7 dias úteis após o pedido.
+    </p>
     <a
       href="/"
       style={{
         display: "inline-block",
-        marginTop: 18,
+        marginTop: 20,
         background: themeColors.verde,
         color: themeColors.roxoEscuro,
         padding: "10px 28px",
@@ -123,6 +143,7 @@ const DashboardExcluirConta = () => (
         border: `2px solid ${themeColors.verdeClaro}`,
         transition: "background 0.2s",
       }}
+      aria-label="Voltar para a página inicial"
     >
       Voltar para a Home
     </a>
